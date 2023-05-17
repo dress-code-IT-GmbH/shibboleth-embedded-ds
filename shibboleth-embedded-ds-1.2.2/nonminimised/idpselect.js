@@ -471,6 +471,9 @@ function IdPSelectUI() {
             if (regexp.test(testString)) {
                 return true;
             }
+            if (testString.startsWith(regexp[i])) {
+                return true;
+            }
         }
         return false;
     };
