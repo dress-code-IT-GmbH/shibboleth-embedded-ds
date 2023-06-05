@@ -14,5 +14,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: configure
-      run: ls -l 
+    - name: compress
+      tar -xzf shibboleth-embedded-ds-patched.1.2.2.tar.gz shibboleth-embedded-ds-patched.1.2.2
+
+    - uses: actions/upload-artifact@v3
+      with:
+        path: shibboleth-embedded-ds-patched.1.2.2.tar.gz
