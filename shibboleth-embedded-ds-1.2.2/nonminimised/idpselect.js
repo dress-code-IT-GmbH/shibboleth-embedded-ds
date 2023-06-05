@@ -1618,4 +1618,3 @@ function IdPSelectUI() {
     };
 }
 
-(new IdPSelectUI()).draw(new IdPSelectUIParms());
