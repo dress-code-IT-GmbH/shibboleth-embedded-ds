@@ -11,17 +11,16 @@ jobs:
     runs-on: ubuntu-latest
     name: Publish
 
-  steps:
-      - name: git-checkout
-        uses: actions/checkout@v2
+    steps:
+      - uses: actions/checkout@v2
 
       - name: build
-      - run: bash build.sh
+        run: bash build.sh
 
       - name: Push
-      - uses: s0/git-publish-subdir-action@develop
-      - env:
-        REPO: self
-        BRANCH: build
-        FOLDER: .
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: build
+          FOLDER: .
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
