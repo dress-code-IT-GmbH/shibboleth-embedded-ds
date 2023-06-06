@@ -3,4 +3,4 @@
 bash build.sh
 
 mkdir -p build
-cp shibboleth-embedded-ds-patched-1.2.2 build
+cp -a shibboleth-embedded-ds-patched-1.2.2 build
