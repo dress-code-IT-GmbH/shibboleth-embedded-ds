@@ -1,24 +1,14 @@
-diff -rupN src_ori/javascript/idpselect.js src/javascript/idpselect.js
---- src_ori/javascript/idpselect.js	2023-06-06 08:49:16.207035294 +0200
-+++ src/javascript/idpselect.js	2023-06-06 09:06:20.177194455 +0200
-@@ -471,6 +471,9 @@ function IdPSelectUI() {
-             if (regexp.test(testString)) {
-                 return true;
-             }
-+            if (testString.startsWith(regexp[i])) {
-+                return true;
-+            }
-         }
-         return false;
-     };
-@@ -1615,4 +1618,3 @@ function IdPSelectUI() {
+diff -rupN src_p1/javascript/idpselect.js src/javascript/idpselect.js
+--- src_p1/javascript/idpselect.js	2023-06-06 09:41:53.926639741 +0200
++++ src/javascript/idpselect.js	2023-06-06 09:42:27.171892659 +0200
+@@ -1618,4 +1618,3 @@ function IdPSelectUI() {
      };
  }
  
 -(new IdPSelectUI()).draw(new IdPSelectUIParms());
-diff -rupN src_ori/resources/index.html src/resources/index.html
---- src_ori/resources/index.html	2023-06-06 08:49:16.209035309 +0200
-+++ src/resources/index.html	2023-06-06 09:06:17.618173038 +0200
+diff -rupN src_p1/resources/index.html src/resources/index.html
+--- src_p1/resources/index.html	2023-06-06 09:41:53.920639695 +0200
++++ src/resources/index.html	2023-06-06 09:42:27.171892659 +0200
 @@ -14,7 +14,10 @@
  
    <script src="idpselect.js" type="text/javascript" language="javascript"></script>

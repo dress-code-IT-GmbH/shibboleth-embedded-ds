@@ -1,0 +1,11 @@
+--- Makefile_ori	2023-06-06 09:44:35.872871787 +0200
++++ Makefile	2023-06-06 09:44:45.221942911 +0200
+@@ -5,7 +5,7 @@ INSTALL=/usr/bin/install
+ JAVA=java
+ TAR=tar
+ ZIP=zip
+-TARGET=shibboleth-embedded-ds-1.2.2
++TARGET=shibboleth-embedded-ds-patched-1.2.2
+ prefix=
+ sysconfdir=${prefix}/etc
+ 
