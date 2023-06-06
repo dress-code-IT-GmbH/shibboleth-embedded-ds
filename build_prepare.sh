@@ -50,3 +50,5 @@ cp ${TARGET}/shibboleth-embedded-ds.spec .
 cp ${TARGET}/LICENSE.txt .
 
 patch -p0 < 1_whitelist.patch
+patch -p0 < 2_delay_call.patch
+patch -p0 < 3_makefile.patch
