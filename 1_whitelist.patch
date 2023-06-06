@@ -1,0 +1,13 @@
+diff -rupN src_ori/javascript/idpselect.js src/javascript/idpselect.js
+--- src_ori/javascript/idpselect.js	2023-06-06 08:49:16.207035294 +0200
++++ src/javascript/idpselect.js	2023-06-06 09:00:45.608394404 +0200
+@@ -471,6 +471,9 @@ function IdPSelectUI() {
+             if (regexp.test(testString)) {
+                 return true;
+             }
++            if (testString.startsWith(regexp[i])) {
++                return true;
++            }
+         }
+         return false;
+     };
